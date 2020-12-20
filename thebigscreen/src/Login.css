@@ -1,0 +1,49 @@
+.login {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: linear-gradient(-45deg, darkblue, #111,red);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+.login>div>img {
+    object-fit: contain;
+    height: 150px;
+    max-width: 600px;
+}
+
+.login>div>img:hover{
+    transform: scale(1.09);
+    transition: 0.3s;
+}
+
+.login>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.login>button {
+    width: 300px;
+    background-color: white;
+    color: black;
+    font-weight: 800;
+}
+
+.login>button:hover {
+    background-color: green;
+    color: white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+

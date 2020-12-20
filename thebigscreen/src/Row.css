@@ -1,0 +1,58 @@
+.row{
+    margin-left: 20px;
+    color: white;
+}
+
+.row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row__poster{
+    object-fit: contain;
+    width:100%;
+    max-height: 200px;
+    transition: transform 450ms;
+    margin-right: 10px;
+}
+
+.row__poster:hover {
+    transform: scale(1.08);
+}
+
+
+.row__posterLarge {
+    max-height: 250px;
+}
+
+.row__posterLarge:hover {
+    transform: scale(1.09);
+}
+
+.movie__detail{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.movie__detail:hover {
+    background-color: gray;
+    transition: 0.6s;
+  }
+
+
